@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+}
+
+
+.cabecalho {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background: url(../media/fundo-cabecalho.png);
+}
+
+.img-logo {
+    width: 50px;
+}
+
+.abas {
+    margin-right: 80px;
+    display: flex;
+    gap: 80px;
+    list-style: none;
+}
+
+.marcado{
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.abas a {
+    text-decoration: none;
+
+}
+
+.abas hr {
+    width: 50px;
+    height: 2px;
+    background-color: #FA0000;
+    border: none;
+}
+
+.text-cabecalho {
+    color: #ccc;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.text-cabecalho:hover {
+    color: #fff;
+}
+.sec-meio {
+    height: 70vh;
+
+    background:
+        linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.3)),
+        url('../media/fundo-sobre.png');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 80px;
+}
+
+.text-principal {
+    font-size: 96px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.sec-meio hr {
+    width: 300px;
+    height: 2px;
+    background-color: #ff1a1a;
+    border: none;
+    margin: 15px 0;
+}
+
+.text-apoio {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffe600;
+    text-transform: uppercase;
+}
+
+.sec-qualidade {
+    background-color: #fff;
+    color: #000;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 30px 40px;
+}
+
+.elemento-quali {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.img-qualidade {
+    width: 50px;
+}
+
+.text-qualidade {
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.sec-qualidade hr {
+    width: 1px;
+    height: 40px;
+    background-color: #999;
+    border: none;
+}
+
+.mapa {
+    height: 500px;
+    background: url('../media/RiodeJaneiro_Micro_Lagos.svg.png');
+    background-size: cover;
+    background-position: center;
+}
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .cabecalho {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .abas {
+        margin: 0;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .text-cabecalho {
+        font-size: 18px;
+    }
+
+    .img-logo {
+        width: 40px;
+    }
+
+    /* HERO */
+    .sec-meio {
+        padding: 0 20px;
+        text-align: center;
+        align-items: center;
+        height: 60vh;
+    }
+
+    .text-principal {
+        font-size: 48px;
+    }
+
+    .sec-meio hr {
+        width: 180px;
+    }
+
+    .text-apoio {
+        font-size: 20px;
+    }
+
+    /* QUALIDADE (ÍCONES) */
+    .sec-qualidade {
+        flex-direction: column;
+        gap: 25px;
+        padding: 25px 20px;
+        text-align: center;
+    }
+
+    .elemento-quali {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .img-qualidade {
+        width: 45px;
+    }
+
+    .text-qualidade {
+        font-size: 20px;
+    }
+
+    /* REMOVE LINHAS DIVISORAS */
+    .sec-qualidade hr {
+        display: none;
+    }
+
+    /* MAPA */
+    .mapa {
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+    }
+}

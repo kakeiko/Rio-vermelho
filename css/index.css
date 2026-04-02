@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+}
+
+
+.cabecalho {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background: url(../media/fundo-cabecalho.png);
+}
+
+.img-logo {
+    width: 50px;
+}
+
+.abas {
+    margin-right: 80px;
+    display: flex;
+    gap: 80px;
+    list-style: none;
+}
+
+.marcado{
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.abas a {
+    text-decoration: none;
+
+}
+
+.abas hr {
+    width: 50px;
+    height: 2px;
+    background-color: #FA0000;
+    border: none;
+}
+
+.text-cabecalho {
+    color: #ccc;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.text-cabecalho:hover {
+    color: #fff;
+}
+
+.sec-meio {
+    height: 100vh;
+    background: 
+        linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.2)),
+        url('../media/fundo-inicio.png');
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 80px;
+}
+
+.text-principal {
+    font-size: 96px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.sec-meio hr {
+    width: 400px;
+    height: 2px;
+    background-color: #FA0000;
+    border: none;
+    margin: 15px 0;
+}
+
+.text-apoio {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffe600;
+    line-height: 1.5;
+}
+
+.sec-baixo {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    background: url(../media/fundo-cabecalho.png);
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aspectos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.obg {
+    display: flex;
+    align-items: center;
+}
+
+.div-sec{
+    margin: 20px 80px;
+}
+
+.img-baixo {
+    width: 70px;
+    margin: 15px 30px;
+}
+
+.div-lado{
+    width: 80px;
+    transform: rotate(90deg);
+}
+
+.img-entrega{
+    width: 100px;
+    margin: 15px 30px;
+}
+
+.text-qualidade,
+.text-entrega,
+.text-atacado {
+    font-size: 36px;
+    color: #ccc;
+    text-transform: uppercase;
+}
+
+.img-btn{
+    margin: 50px 0;
+}
+@media (max-width: 768px) {
+
+    .cabecalho {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .abas {
+        margin: 0;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .text-cabecalho {
+        font-size: 18px;
+    }
+
+    .img-logo {
+        width: 40px;
+    }
+
+    .sec-meio {
+        padding: 0 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .text-principal {
+        font-size: 48px;
+    }
+
+    .sec-meio hr {
+        width: 200px;
+    }
+
+    .text-apoio {
+        font-size: 22px;
+    }
+
+    .sec-baixo {
+        padding: 20px;
+    }
+
+    .aspectos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .div-sec {
+        margin: 10px 0;
+    }
+
+    .div-lado {
+        display: none;
+    }
+
+    .obg {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .img-baixo,
+    .img-entrega {
+        width: 60px;
+        margin: 10px 0;
+    }
+
+    .text-qualidade,
+    .text-entrega,
+    .text-atacado {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* BOTÃO */
+    .img-btn img {
+        width: 180px;
+    }
+}

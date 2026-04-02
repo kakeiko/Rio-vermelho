@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+}
+
+
+.cabecalho {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background: url(../media/fundo-cabecalho.png);
+}
+
+.img-logo {
+    width: 50px;
+}
+
+.abas {
+    margin-right: 80px;
+    display: flex;
+    gap: 80px;
+    list-style: none;
+}
+
+.marcado{
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.abas a {
+    text-decoration: none;
+
+}
+
+.abas hr {
+    width: 70px;
+    height: 2px;
+    background-color: #FA0000;
+    border: none;
+}
+
+.text-cabecalho {
+    color: #ccc;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.text-cabecalho:hover {
+    color: #fff;
+}
+
+
+.sec-cima {
+    height: 45vh;
+
+    background:
+        linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.3)),
+        url('../media/fundo-madeira.png'); /* imagem madeira */
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 80px;
+}
+
+.text-principal {
+    margin-top: 100px;
+    font-size: 64px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.sec-cima hr {
+    width: 650px;
+    height: 2px;
+    background-color: #ff1a1a;
+    border: none;
+    margin: 15px 0;
+}
+
+.text-apoio {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffe600;
+    text-transform: uppercase;
+}
+
+.text-apoio-apoio {
+    font-size: 32px;
+    color: #ddd;
+    margin-top: 5px;
+}
+
+
+.sec-produto {
+    background-color: #efefef;
+    padding: 40px 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.produto {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+
+    width: 100%;
+    max-width: 260px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+}
+
+.img-produto {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+.text-produto {
+    font-size: 24px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.text-descricao {
+    font-size: 16px;
+    color: #555;
+}
+
+.sec-baixo {
+    background:url('../media/fundo-cabecalho.png');
+
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.sec-baixo .text-principal {
+    font-size: 48px;
+    color: #ffe600;
+    margin-bottom: 15px;
+}
+
+.text-apoio-baixo {
+    font-size: 32px;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.img-btn {
+    margin: 20px 0;
+    width: 350px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.img-btn:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .cabecalho {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .abas {
+        margin: 0;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .text-cabecalho {
+        font-size: 18px;
+    }
+
+    .img-logo {
+        width: 40px;
+    }
+
+    /* HERO */
+    .sec-cima {
+        padding: 0 20px;
+        text-align: center;
+        align-items: center;
+        height: 50vh;
+    }
+
+    .text-principal {
+        font-size: 32px;
+        margin-top: 80px;
+    }
+
+    .sec-cima hr {
+        width: 200px;
+    }
+
+    .text-apoio {
+        font-size: 22px;
+    }
+
+    .text-apoio-apoio {
+        font-size: 16px;
+    }
+
+    /* PRODUTOS */
+    .sec-produto {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+    }
+
+    .produto {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .img-produto {
+        width: 100px;
+    }
+
+    .text-produto {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .text-descricao {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* SEÇÃO FINAL */
+    .sec-baixo {
+        padding: 30px 20px;
+    }
+
+    .sec-baixo .text-principal {
+        font-size: 28px;
+    }
+
+    .text-apoio-baixo {
+        font-size: 18px;
+    }
+
+    .img-btn {
+        width: 220px;
+    }
+}
